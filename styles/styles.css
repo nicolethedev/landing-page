@@ -1,7 +1,13 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* entire page styling */
 body {
     font-size: 1.25rem;
-    font-family: Quicksand, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     line-height: 1.5;
     color: #FFF4E5;
     background-color: #293241;
@@ -17,7 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 3rem 2rem;
 }
 
 nav li {
@@ -37,9 +43,11 @@ nav .contact-me {
 }
 /* header */
 header {
-    padding: 3rem;
     display: flex;
-    height: 550px;
+    width: 100vw;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-top: 4rem;
 }
 
 .header-text {
@@ -47,22 +55,28 @@ header {
 }
 
 .header-image {
-    width: 200px;
-    height: 200px;
+    width: auto;
+    height: auto;
     border-radius: 50%;
     padding: 3rem;
+    align-items: center;
+    align-content: center;
+    margin-left: 3rem;
 }
 
 header h1 {
-    font-family: Lilita One, sans-serif;
+    font-family: 'Paytone One', sans-serif;
     font-size: 5rem;
+}
+
+header h2 {
+    font-size: 1.3em;
+    font-weight: 400;
 }
 
 .header-image img {
     width: 500px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(50%);
+    position: static;
 }
 /* main */
 
@@ -98,7 +112,7 @@ header h1 {
 
 .goals-background {
     color: #FFF4E5;
-    padding: 0 15rem;
+    padding: 4rem 15rem;
     margin: 0 auto;
 }
 
@@ -113,7 +127,6 @@ header h1 {
 /* about me section */
 .about {
     display: flex;
-    height: 500px;
 }
 
 .about h3 {
@@ -125,22 +138,31 @@ header h1 {
     padding-right: 2rem;
 }
 
-.about-image, .about-text {
-    padding: 5rem 0;
-}
-
 .about-image {
-    flex: 50%;
+    width: 50%;
     background-color: #98C1D9;
     border: 2rem solid #98c1D9;
 }
 
+.about-image img {
+    width: 350px;
+    border-radius: 10%;
+    border: 6px solid #FFF4E5;
+    box-shadow: -8px 10px #3D5A80;
+}
+
 .about-text {
-    flex: 50%;
-    padding: 0 3rem;
+    width: 50%;
+    padding: 4rem 3rem;
     color: #293241;
     background-color: #FFF4E5;
 }
+
+.about-text .links {
+    margin-top: 3rem;
+}
+
+/* styling for icons in about me section */
 
 .links img {
     width: 4rem;
