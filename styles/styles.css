@@ -1,0 +1,173 @@
+/* entire page styling */
+body {
+    font-size: 1.25rem;
+    font-family: Quicksand, sans-serif;
+    line-height: 1.5;
+    color: #FFF4E5;
+    background-color: #293241;
+}
+
+body a {
+    text-decoration: none;
+    color: #FFF4E5;
+}
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav a {
+    margin: 0 1rem;
+}
+
+nav .contact-me {
+    background-color: #EE6C4D;
+    padding: 0.5rem 1rem;
+    border: 3px solid #fff4e5;
+    border-radius: 10px;
+}
+/* header */
+header {
+    padding: 3rem;
+    display: flex;
+    height: 550px;
+}
+
+.header-text {
+    margin-left: 2rem;
+}
+
+.header-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 3rem;
+}
+
+header h1 {
+    font-family: Lilita One, sans-serif;
+    font-size: 5rem;
+}
+
+.header-image img {
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(50%);
+}
+/* main */
+
+/* projects section */
+
+.projects {
+    background-color: #98C1D9;
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+}
+
+.projects h3 {
+    font-size: 3rem;
+}
+
+.projects .categories {
+    
+}
+
+
+/* goals section */
+.goals {
+    display: flex;
+    background-color: #3D5A80;
+    width: 100%;
+    height: auto;
+}
+
+.goals h3 {
+    font-size: 3rem;
+}
+
+.goals-background {
+    color: #FFF4E5;
+    padding: 0 15rem;
+    margin: 0 auto;
+}
+
+.goals-text{
+    margin-bottom: 3.5rem;
+}
+
+.goals-text li {
+    font-size: 1.5rem;
+}
+
+/* about me section */
+.about {
+    display: flex;
+    height: 500px;
+}
+
+.about h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    padding-right: 2rem;
+}
+
+.about-image, .about-text {
+    padding: 5rem 0;
+}
+
+.about-image {
+    flex: 50%;
+    background-color: #98C1D9;
+    border: 2rem solid #98c1D9;
+}
+
+.about-text {
+    flex: 50%;
+    padding: 0 3rem;
+    color: #293241;
+    background-color: #FFF4E5;
+}
+
+.links img {
+    width: 4rem;
+    border: 4px solid #EE6C4D;
+    border-radius: 20%;
+    padding: .5rem;
+}
+/* return to top of page */
+.top-of-page {
+    width: 100%;
+    background-color: #EE6C4D;
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p:last-of-type {
+    font-style: italic;
+}
+
+.heart {
+    color: #EE6C4D;
+}
