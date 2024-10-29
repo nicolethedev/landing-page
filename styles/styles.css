@@ -5,9 +5,14 @@
 }
 
 /* hover styling */
-a:hover {
+nav a:hover {
     color: #98C1D9;
     font-weight: 600;
+}
+
+.contact-me:hover {
+    color: #293241;
+    background-color: #FFF4E5;
 }
 
 .icon:hover {
