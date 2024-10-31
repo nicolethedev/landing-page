@@ -249,6 +249,7 @@ header h2 {
 
 .about p {
     padding-right: 2rem;
+    max-width: 45rem;
 }
 
 .about-image {
