@@ -93,7 +93,7 @@ header {
 }
 
 .header-text {
-    margin-left: 2rem;
+    margin-left: 4.5rem;
 }
 
 .header-image {
@@ -105,7 +105,8 @@ header {
 
 header h1 {
     font-family: 'Paytone One', sans-serif;
-    font-size: 5rem;
+    font-size: 5.5rem;
+    margin-bottom: 1.5rem;
 }
 
 header h2 {
@@ -130,15 +131,17 @@ header h2 {
     font-size: 3rem;
     width: 100%;
     padding-bottom: 1.5rem;
+    color: #293241;
 }
 
 .projects-container {
     display: flex;
     justify-content: space-between;
     gap: 1.5rem;
-    padding: 1.5rem;
+    padding: 3rem;
     flex-wrap: wrap;
     max-width: 130rem;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -201,7 +204,7 @@ header h2 {
     justify-content: center;
     background-color: #EE6C4D;
     padding: 1.5rem;
-    border: 2px solid #FFF4E5;
+    border: 3px solid #FFF4E5;
     border-radius: 10px;
     margin: 0 auto;
     font-weight: 800;
@@ -286,7 +289,7 @@ header h2 {
 /* styling for icons in about me section */
 
 .links img {
-    width: 4rem;
+    width: 5rem;
     border: 4px solid #EE6C4D;
     border-radius: 20%;
     padding: .5rem;
@@ -296,9 +299,16 @@ header h2 {
 .top-of-page {
     width: 100%;
     background-color: #EE6C4D;
+    color: #000;
     text-align: center;
     padding: 1rem 0;
     font-weight: bold;
+}
+
+.top-of-page a {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 /* footer */
