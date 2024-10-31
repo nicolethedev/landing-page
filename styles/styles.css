@@ -13,6 +13,7 @@ nav a:hover {
 .contact-me:hover {
     color: #293241;
     background-color: #FFF4E5;
+    transition-duration: 0.3s;
 }
 
 .icon:hover {
@@ -26,6 +27,19 @@ nav a:hover {
 .nav-logo:hover {
     transition: all 0.5s ease-in;
     transform: scale(1.1);
+}
+
+.project-link:hover {
+    color: #FFF4E5;
+    background-color: #293241;
+    border: 2px solid #293241;
+    transition-duration: 0.3s;
+}
+
+.view-all:hover {
+    color: #293241;
+    background-color: #FFF4E5;
+    transition-duration: 0.3s;
 }
 
 /* entire page styling */
@@ -61,7 +75,7 @@ nav a {
 
 nav .contact-me {
     background-color: #EE6C4D;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
     border: 3px solid #fff4e5;
     border-radius: 10px;
 }
@@ -109,17 +123,18 @@ header h2 {
 
 .projects {
     background-color: #98C1D9;
+    padding: 2rem;
 }
 
 .section-title {
     font-size: 3rem;
+    width: 100%;
+    padding-bottom: 1.5rem;
 }
 
 .projects-container {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    width: 100%;
     gap: 1.5rem;
     padding: 1.5rem;
     flex-wrap: wrap;
@@ -128,11 +143,12 @@ header h2 {
 .project-card {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
     position: relative;
     padding: 1.5rem;
     background: #FFF4E5;
     color: #293241;
+    border-radius: 10px;
+    box-shadow: -8px 10px #3D5A80;
 }
 
 .top-of-card {
@@ -146,14 +162,18 @@ header h2 {
 .project-card img {
     width: 300px;
     border-radius: 4%;
-    object-fit: cover;
-    object-position: 50% 20%;
 }
 
 .title-flex {
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
+    color: #293241;
+}
+
+.title-flex p {
+    margin-top: .5rem;
+    font-style: italic;
 }
 
 .project-title {
@@ -163,15 +183,32 @@ header h2 {
 }
 
 .project-link {
-    display: flex;
+    display: block;
+    text-align: center;
     gap: 1rem;
     border: 2px solid #EE6C4D;
     color: #293241;
     font-weight: 600;
     padding: 1rem;
     background-color: #EE6C4D;
+    margin-top: 1.5rem;
+    border-radius: 10px;
 }
 
+.view-all {
+    display: flex;
+    justify-content: center;
+    background-color: #EE6C4D;
+    padding: 1.5rem;
+    border: 2px solid #FFF4E5;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-weight: 800;
+}
+
+.projects-container .view-all {
+    margin-top: 2rem;
+}
 
 /* goals section */
 .goals {
@@ -183,6 +220,7 @@ header h2 {
 
 .goals h3 {
     font-size: 3rem;
+    padding-bottom: 1.5rem;
 }
 
 .goals-background {
@@ -239,6 +277,10 @@ header h2 {
     margin-top: 3rem;
 }
 
+.links h4 {
+    padding-bottom: 1rem;
+}
+
 /* styling for icons in about me section */
 
 .links img {
@@ -247,6 +289,7 @@ header h2 {
     border-radius: 20%;
     padding: .5rem;
 }
+
 /* return to top of page */
 .top-of-page {
     width: 100%;
