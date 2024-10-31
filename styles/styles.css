@@ -23,6 +23,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.nav-logo:hover {
+    transition: all 0.5s ease-in;
+    transform: scale(1.1);
+}
+
 /* entire page styling */
 body {
     font-size: 1.25rem;
@@ -65,6 +70,7 @@ nav .contact-me {
     position: relative;
     width: 100px;
 }
+
 /* header */
 header {
     display: flex;
@@ -103,27 +109,69 @@ header h2 {
 
 .projects {
     background-color: #98C1D9;
-    width: 100%;
-    height: auto;
-    padding: 3rem;
 }
 
-.projects h3 {
+.section-title {
     font-size: 3rem;
 }
 
- .project-card {
+.projects-container {
     display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+}
 
-    justify-content: space-evenly;
-    margin: 2rem 0;
-    border: 2px solid #293241;
- }
+.project-card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    position: relative;
+    padding: 1.5rem;
+    background: #FFF4E5;
+    color: #293241;
+}
 
-    .project-card img {
-        width: 300px;
-        border-radius: 4%;
-    }
+.top-of-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project-card img {
+    width: 300px;
+    border-radius: 4%;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+.title-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 2rem;
+    border-left: 4px solid #EE6C4D;
+    padding-left: 1rem;
+}
+
+.project-link {
+    display: flex;
+    gap: 1rem;
+    border: 2px solid #EE6C4D;
+    color: #293241;
+    font-weight: 600;
+    padding: 1rem;
+    background-color: #EE6C4D;
+}
+
 
 /* goals section */
 .goals {
