@@ -54,6 +54,7 @@ body {
     line-height: 1.5;
     color: #FFF4E5;
     background-color: #293241;
+    width: 100%;
 }
 
 body a {
@@ -65,18 +66,22 @@ body a {
 nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem;
+    margin: 0 auto;
 }
 
 nav li {
     list-style-type: none;
-    display:inline-flex;
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center; 
 }
 
 nav a {
-    margin: 0 1rem;
+    display: block;
+    justify-content: space-between;
+    margin-top: .5rem;
 }
 
 nav .contact-me {
@@ -87,9 +92,9 @@ nav .contact-me {
 }
 
 .nav-logo {
-    position:relative;
+    position: relative;
     margin: 2rem;
-    width: 100px;
+    width: 6rem;
     align-content: center;
 }
 
