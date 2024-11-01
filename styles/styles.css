@@ -141,7 +141,7 @@ header h2 {
 
 .projects {
     background-color: #98C1D9;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .section-title {
@@ -155,7 +155,7 @@ header h2 {
     display: flex;
     justify-content: space-between;
     gap: 1.5rem;
-    padding: 3rem;
+    padding: 2rem;
     flex-wrap: wrap;
     max-width: 130rem;
     margin: 0 auto;
