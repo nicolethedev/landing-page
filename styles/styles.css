@@ -106,6 +106,32 @@ nav .contact-me {
     align-content: center;
 }
 
+@media (min-width: 670px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+    }
+
+    .nav-links a {
+        margin-right: 1em;
+    }
+
+    .contact-me {
+        margin-right: 2em;
+    }
+
+    .nav-logo {
+        margin-left: 2em;
+    }
+    
+}
+
 /* header */
 header {
     display: grid;
@@ -312,7 +338,7 @@ header h2 {
 
 .about-text {
     /* width: 50%; */
-    padding: 1rem 1rem;
+    padding: 1.5rem 1.5rem;
     color: #293241;
     background-color: #FFF4E5;
 }
@@ -366,4 +392,13 @@ footer p:last-of-type {
 
 .heart {
     color: #EE6C4D;
+}
+
+@media (min-width: 670px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
 }
