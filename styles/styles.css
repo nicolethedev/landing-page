@@ -8,7 +8,6 @@
 html {
     scroll-behavior: smooth;
     width: 100%;
-    /* max-width: 19rem; */
 }
 
 /* hover styling */
@@ -58,7 +57,10 @@ body {
     color: #FFF4E5;
     background-color: #293241;
     max-width: 19rem;
-    /* width: 375px; */
+    width: 100%;   
+    display: flexbox;
+    flex-wrap: wrap;
+    max-width: 120rem;
 }
 
 body a {
@@ -70,9 +72,9 @@ body a {
 nav {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin: 0;
-    max-width: 19.5rem;
 }
 
 nav li {
@@ -107,11 +109,8 @@ nav .contact-me {
 /* header */
 header {
     display: grid;
-    /* justify-content: */
     padding: .75rem;
-    max-width: 19rem;
-    /* max-width: 100vw; */
-    /* align-items: center; */
+    /* max-width: 19rem; */
 }
 
 .header-text {
@@ -119,12 +118,10 @@ header {
     z-index: 2;
     text-wrap: wrap;
     padding-top: 4rem;
-    max-width: 19rem;
 }
 
 .header-image {
     padding-top: 2rem;
-    padding-bottom: rem;
     z-index: 1; 
 }
 
@@ -132,43 +129,41 @@ header h1 {
     font-family: 'Paytone One', sans-serif;
     font-size: 2.2rem;
     margin: 0 auto;
-    max-width: 19rem;
 }
 
 header h2 {
     font-size: 1em;
     font-weight: 400;
-    max-width: 16rem;
     margin-top: 1rem;
 }
 
 .header-image img {
     width: 250px;
-    justify-content: center;
+    /* justify-content: center; */
 }
+
 /* main */
 
 /* projects section */
 
 .projects {
     background-color: #98C1D9;
-    /* padding: 1rem; */
 }
 
 .section-title {
-    font-size: 2rem;
+    display: block;
     width: 100%;
+    font-size: 2rem;
     padding: 1rem;
     color: #293241;
 }
 
 .projects-container {
-    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
-    flex-wrap: wrap;
-    /* max-width: 1rem; */
     margin: 0 auto;
 }
 
@@ -234,7 +229,6 @@ header h2 {
 }
 
 .view-all {
-    display: flex;
     background-color: #3D5A80;
     padding: 1.25rem;
     border: 2px solid #FFF4E5;
@@ -286,7 +280,6 @@ header h2 {
 
 .about p {
     font-size: 1.1rem;
-    max-width: 17rem;
 }
 
 .about-image {
