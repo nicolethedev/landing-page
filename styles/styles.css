@@ -233,6 +233,14 @@ header h2 {
     font-weight: 500;
 }
 
+.view-all-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .view-all {
     background-color: #3D5A80;
     padding: 1.25rem;
