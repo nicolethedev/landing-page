@@ -175,16 +175,16 @@ header h2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 1rem;
-        padding-bottom: 3rem;
+        padding-bottom: 6rem;
     }
 
     .header-text {
-        padding-top: 2rem;
+        padding-top: 4rem;
         padding-left: 2rem;
     }
 
     header h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     header h2 {
