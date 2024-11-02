@@ -39,7 +39,6 @@ nav a:hover {
 .project-link:hover {
     color: #FFF4E5;
     background-color: #293241;
-    border: 2px solid #293241;
     transition-duration: 0.3s;
 }
 
@@ -60,7 +59,7 @@ body {
     width: 100%;   
     display: flexbox;
     flex-wrap: wrap;
-    max-width: 120rem;
+    max-width: 300rem;
 }
 
 body a {
@@ -119,7 +118,7 @@ nav .contact-me {
     }
 
     .nav-links a {
-        margin-right: 1em;
+        margin-right: 1.5em;
     }
 
     .contact-me {
@@ -171,13 +170,38 @@ header h2 {
     /* justify-content: center; */
 }
 
-/* main */
+@media (min-width: 900px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+    }
 
+    .header-text {
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    .header-image img {
+        width: 400px;
+    }
+}
+
+
+/* main */
 /* projects section */
 
 .projects {
     background-color: #98C1D9;
-    
+    width: 100%;
 }
 
 .section-title {
@@ -194,6 +218,7 @@ header h2 {
     justify-content: space-between;
     gap: 1rem;
     padding: 1.5rem;
+    width: 100%;
 }
 
 .project-card {
@@ -281,6 +306,37 @@ header h2 {
     margin-bottom: 2rem;
 }
 
+@media (min-width: 900px) {
+    
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    .project-card img {
+        width: 300px;
+    }
+
+    .project-title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1.25rem;
+    }
+
+    .project-link {
+        font-size: 1.25rem;
+    }
+
+    .view-all {
+        padding: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
 /* goals section */
 .goals {
     display: flex;
@@ -305,6 +361,17 @@ header h2 {
 
 .goals-text li {
     font-size: 1.2rem;
+}
+
+@media (min-width: 900px) {
+
+    .goals h3 {
+        font-size: 2.5rem;
+    }
+
+    .goals-text li {
+        font-size: 1.5rem;
+    }
 }
 
 /* about me section */
@@ -361,6 +428,43 @@ header h2 {
     padding: .5rem;
 }
 
+@media (min-width: 900px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-image {
+        padding: 2rem;
+    }
+
+    .about-text {
+        padding: 2rem;
+    }
+
+    .about h3 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 1.25rem;
+        max-width: 700px;
+    }
+
+    .about-image img {
+        width: 300px;
+    }
+
+    .links img {
+        width: 4rem;
+    }
+
+    .links h4 {
+        font-size: 1.4rem;
+    }
+}
+
+
 /* return to top of page */
 .top-of-page {
     /* width: 100%; */
@@ -399,6 +503,11 @@ footer p:last-of-type {
         display: flex;
         justify-content: space-between;
     }
+}
 
-
+@media (min-width: 900px) {
+    footer {
+        font-size: 1.2rem;
+    }
+    
 }
